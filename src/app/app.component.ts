@@ -33,6 +33,9 @@ export class AppComponent {
       this.texto = 'En el proximo veremos Two Day data Binding'
   }
 
+  // Two Way Data Bindign -> Se maneja de ts y html a la vez
+  texto2=''
+
  
 
 }

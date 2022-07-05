@@ -1,12 +1,26 @@
 <div class="container mt-4">
     <div class="row">
-        <h3>La suma de 10+15 = {{ getSumar(10,15) }} </h3>
-        <br>
-        <input type="text" class="form-control" [placeholder]="textPlaceHolder" [disabled]="deshabilitado">
-        <br>
-        <img [src]="imgSrc" width="200px" height="400px " alt="Img">
-        <br>
-        <h3> {{texto}} </h3>
-        <button class="btn btn-primary" (click)="cambiarTexto()" >Click me</button>
+
+        <div>
+          <h3>La suma de 10+15 = {{ getSumar(10,15) }} </h3>
+          <br>
+          <input type="text" class="form-control" [placeholder]="textPlaceHolder" [disabled]="deshabilitado">
+          <br>
+        </div>
+
+        <div>
+          <img [src]="imgSrc" width="300px" height="400px " alt="Img">
+          <br>
+          <h3> {{texto}} </h3>
+          <button class="btn btn-primary" (click)="cambiarTexto()" >Click me</button>
+          <br>
+        </div>
+
+        <div>
+          <input type="text" class="form-control" placeholder="Escriba algo aqui" [(ngModel)]="texto2" >
+          <br>
+          {{texto2}}
+        </div>
+
       </div>
 </div>
