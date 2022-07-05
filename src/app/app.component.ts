@@ -26,6 +26,13 @@ export class AppComponent {
   deshabilitado = true
   imgSrc = 'https://i.ytimg.com/vi/qJxYoiFzIC0/maxresdefault.jpg'
 
+
+  // Event bindign Viaja del archivo Html al ts
+  texto = 'Esto es una prueba para event Binding'
+  cambiarTexto = () => {
+      this.texto = 'En el proximo veremos Two Day data Binding'
+  }
+
  
 
 }
